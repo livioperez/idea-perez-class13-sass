@@ -1,19 +1,16 @@
 // esto es un comntario scss 
 
 
-/*esto es alla*/
+/*esto es aca*/
 
 @import "color";
+@import "footer";
+@import "animaciones";
 
 
 
 
 
-
-.encabezado{
-    background-image: $colorPagina;
-
-}
 
 .logo{
     position: absolute;    
@@ -41,12 +38,13 @@
     z-index: 10;
     }
     .encabezado{
-        height: 200px;
+        background-image: $colorPagina;
+        
         h1 {
             height: 3em;
             font-size: 4.2em;     
             font-family: 'Spline Sans', sans-serif;      
-            color: aliceblue;
+            color: $colorH;
             padding-top: 1em;
             text-shadow: 10px 10px 5px gray;
             padding-left: 30px; }
@@ -55,7 +53,7 @@
                 flex-direction: row;
                 justify-content: center;
         
-                color: aliceblue;         
+                color: $colorH;         
                 font-size: 2.5em;    
                 padding-top: 50px; 
                 font-family: 'Ubuntu Mono', monospace;    
@@ -67,13 +65,20 @@
                } 
                
     }
+    @keyframes aparecer {
+        0% {
+          opacity: 0;
+        }
+        100% {
+          opacity: 1;
+        }}
 
     .carru{    
         height: 25em;   
          
     }
     .carrColor{
-        color: rgb(236, 241, 236);
+        color: $colorH;
         background-color: gray;
         opacity: 0.8;
         display: inline block;
@@ -83,7 +88,26 @@
     }
     
 
+    .parrafo{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
 
-    .redes{
-        background-image: $colorPagina;
+        background-color: rgba(241, 235, 235, 0.541);
+        font-size: 2em;
+        color: $colorLeyendas;
+        margin: 20px;
+        padding: 20px;
     }
+
+
+   
+    
+
+
+
+    
+.clienHeight{
+    height: 22em;
+    width: 100%;
+}

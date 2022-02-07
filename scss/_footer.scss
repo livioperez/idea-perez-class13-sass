@@ -1,3 +1,14 @@
-$criterioFooter:
-    linear-gradient( rgb(70, 113, 146), rgb(215, 217, 224));
-    
+.footer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 20px;
+    background-image: $colorPagina;
+    height: 5em;
+}
+.redes{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+}
